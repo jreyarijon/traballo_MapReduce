@@ -9,7 +9,7 @@
 import sys
 
 for line in sys.stdin:
-	if line == "\t": continue
+	if "\t" not in line: continue
 	else :
 		data = line.strip().split("\t")
 		date, time, store, item, cost, payment = data
